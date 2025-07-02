@@ -5,7 +5,7 @@ This repository demonstrates work with **Spring AI** in different ways using dif
 ### Goals:
 
 - Introduce Spring AI with minimal code
-- Show how to integrate different providers like **Ollama** and **Gemini** etc
+- Show how to integrate different providers like **Ollama** and **Mistral** etc
 - Keep each setup isolated in its own Git branch
 - Build a strong foundation for more advanced AI-powered apps
 
@@ -13,11 +13,11 @@ This repository demonstrates work with **Spring AI** in different ways using dif
 
 ## Branches
 
-| Branch                                                                    | Description                                     |
-|---------------------------------------------------------------------------|-------------------------------------------------|
-| [`basic-ollama`](https://github.com/tarunv79/spring-ai/tree/basic-ollama) | Spring AI + Ollama (Mistral) - Minimal Chat API |
-| [`basic-gemini`](https://github.com/tarunv79/spring-ai/tree/basic-gemini) | Cloud model using Gemini API                    |
-| `default`                                                                 | You are here – repo overview and branch guide   |
+| Branch                                                                      | Description                                     |
+|-----------------------------------------------------------------------------|-------------------------------------------------|
+| [`basic-mistral`](https://github.com/tarunv79/spring-ai/tree/basic-mistral) | LLM Enabled Java Applications using Spring AI and Mistral-AI|
+| [`basic-ollama`](https://github.com/tarunv79/spring-ai/tree/basic-ollama)   | Spring AI + Ollama (Mistral) - Minimal Chat API |
+| `default`                                                                   | You are here – repo overview and branch guide   |
 
 ---
 
@@ -47,11 +47,9 @@ Repository demonstrates:
 
 ## Coming Up
 
-- ✅ Basic Ollama chat API
-- 🔜 Gemini API chat integration
-- 🔜 Creating you own ChatModel with ChatClient
-- 🔜 Chat history/memory support
-- 🔜 Prompt templating
+- Creating you own ChatModel with ChatClient
+- Chat history/memory support
+- Prompt templating
 
 ---
 
