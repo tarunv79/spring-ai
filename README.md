@@ -21,8 +21,7 @@ This is a **basic Spring Boot project** that introduces [Spring AI](https://docs
 ### 1. Clone the Project
 
 ```bash
-git clone https://github.com/tarunv79/spring-ai-ollama-chat.git
-cd spring-ai-ollama-chat
+git clone https://github.com/tarunv79/spring-ai.git
 ```
 ### 2. Run Ollama (Assuming Ollama is installed)
 
