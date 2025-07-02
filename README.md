@@ -40,8 +40,7 @@ Create an account at [Mistral AI registration page](https://auth.mistral.ai/ui/r
 ### 1. Clone the Project
 
 ```bash
-git clone https://github.com/tarunv79/spring-ai-ollama-chat.git
-cd spring-ai-ollama-chat
+git clone https://github.com/tarunv79/spring-ai.git
 ``` 
 
 <p><b>OR</b></p>
