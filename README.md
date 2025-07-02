@@ -1,75 +1,67 @@
-# Spring AI + Ollama (Mistral) - Minimal Chat API
+# Spring AI Playground
 
-This is a **basic Spring Boot project** that introduces [Spring AI](https://docs.spring.io/spring-ai/reference/) using a **locally running Ollama model** (like `mistral`). It includes a `/chat` REST endpoint to interact with the AI model.
+This repository demonstrates work with **Spring AI** in different ways using different LLM providers.
 
-> Goal: Help beginners get started with Spring AI + local LLMs in a few simple steps.
+### Goals:
+
+- Introduce Spring AI with minimal code
+- Show how to integrate different providers like **Ollama** and **Gemini** etc
+- Keep each setup isolated in its own Git branch
+- Build a strong foundation for more advanced AI-powered apps
 
 ---
 
-## Tech Stack
+## Branches
+
+| Branch                                                                    | Description                                     |
+|---------------------------------------------------------------------------|-------------------------------------------------|
+| [`basic-ollama`](https://github.com/tarunv79/spring-ai/tree/basic-ollama) | Spring AI + Ollama (Mistral) - Minimal Chat API |
+| [`basic-gemini`](https://github.com/tarunv79/spring-ai/tree/basic-gemini) | Cloud model using Gemini API                    |
+| `default`                                                                 | You are here – repo overview and branch guide   |
+
+---
+
+## My Other Repositories
+### Want to work with Python and LLMs?
+[https://github.com/tarunv79/llm-local](https://github.com/tarunv79/llm-local)
+
+This repository contains examples for efficiently processing logs using a locally hosted Mistral LLM with LangChain. 
+Repository demonstrates:
+- setting up local LLMs - `Mistral` and `Phi` using `Ollama`
+- basic chat API using `requests`
+- using `LangChain` to create a prompt templates
+- contextual prompting with `LangChain` and `Ollama`
+- optimizing prompts
+- tokenization and chunking
+
+## Requirements (general)
 
 - Java 17+
+- Maven 3.9+
 - Spring Boot 3.2+
-- Spring AI 1.0.0-SNAPSHOT
-- Ollama (running locally)
-- Model used: `mistral` (but you can switch)
+- [Spring AI](https://docs.spring.io/spring-ai/reference/)
+- Ollama (for local)
+- Gemini API key (for Google Gemini)
+...
+---
+
+## Coming Up
+
+- ✅ Basic Ollama chat API
+- 🔜 Gemini API chat integration
+- 🔜 Creating you own ChatModel with ChatClient
+- 🔜 Chat history/memory support
+- 🔜 Prompt templating
 
 ---
 
-## Getting Started
+## Want to Contribute?
 
-### 1. Clone the Project
+Open issues, ideas, or PRs are welcome.
 
-```bash
-git clone https://github.com/tarunv79/spring-ai-ollama-chat.git
-cd spring-ai-ollama-chat
-```
-### 2. Run Ollama (Assuming Ollama is installed)
+---
 
-```bash
-ollama run mistral
-```
-
-You can verify it’s working at: http://localhost:11434
-
-### 3. Build and Run the Project
-
-```bash
-# Build the project
-mvn clean install
-
-# Run the application
-mvn spring-boot:run 
-
-# If you encounter warnings about RMI, you can specify the hostname:
-mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Djava.rmi.server.hostname=localhost"
-```
-
-Alternatively, if you are using an IDE like IntelliJ or Eclipse, you can import the project and run it directly from there.
-
-### 4. Test the Chat API
-
-You can use `curl` or any API client (like Postman) to test the chat endpoint:
-
-```bash
-
-curl "http://localhost:8080/chat?message=How%20are%20you?"
-
-# Here is the response you should expect:
-# I'm just a computer program, so I don't have feelings or consciousness. But I'm here to help you with your questions! Is there something specific you'd like to know about today?
-# Also, if you're having a rough day and need someone to talk to, feel free to share what's on your mind. I'm here to listen without judgment.
-
-```
-
-## Summary
-
-This project demonstrates a minimal, local-first setup for:
-
-Running Spring Boot + Spring AI
-Using a local LLM (Mistral via Ollama)
-Exposing a basic /chat API for testing
-
-## Resources
+## References
 - [Spring AI Documentation](https://docs.spring.io/spring-ai/reference/)
-- [Ollama Documentation](https://docs.spring.io/spring-ai/reference/api/chat/ollama-chat.html)
-- [Spring Initializr](https://start.spring.io/)
+- [Ollama Documentation](https://ollama.com/docs)
+- [Google Gemini Documentation](https://developers.google.com/gemini)
