@@ -21,6 +21,10 @@ This repository demonstrates work with **Spring AI** in different ways using dif
 
 ---
 
+## Related Articles
+[LLM Enabled Java Applications using Spring AI and Mistral-AI](https://medium.com/@tarun-vishwakarma/llm-enabled-java-applications-using-spring-ai-and-mistral-ai-3b6b4d6fe46a)
+
+
 ## My Other Repositories
 ### Want to work with Python and LLMs?
 [https://github.com/tarunv79/llm-local](https://github.com/tarunv79/llm-local)
